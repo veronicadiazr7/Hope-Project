@@ -46,7 +46,7 @@ async function getNews() {
                     <div class="card">
                     <div class="card-body">
                     <img src="${response[property].image}" class="card-img-top" alt="" title=""><br>
-                    <h2 class="card-title"> <a href="${response[property].url}">  ${response[property].title}</a></h2>  
+                    <h2 class="card-title"> <a id="card-title" href="${response[property].url}">  ${response[property].title}</a></h2>  
                     <div class="card-text">
                          <p>${response[property].region}</p>
                          <p>${response[property].source}</p>

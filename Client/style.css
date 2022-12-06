@@ -19,21 +19,37 @@ body {
 }
 
 /* global styling */
-
+div#output {
+  display: flex;
+  flex-direction: row;
+}
 .container {
   padding: 10px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 
 .card {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   padding: 10px;
-  box-shadow: 5px 15px 15px black;
+  box-shadow: 5px 15px 15px #01acc859;
+  height: 270px;
+  width: 270px;
+  overflow: hidden;
 }
 
+a#card-title {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60px;
+}
+
+div#output {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .card-img-top {
   width: 100%;
 }
@@ -59,9 +75,9 @@ hr {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  background: #252525;
+  background: #01acc8;
   color: #fff;
-  padding: 20px 30px;
+  /* padding: 10px 10px; */
 }
 
 .top-head .fas {
@@ -69,6 +85,9 @@ hr {
   cursor: pointer;
 }
 
+img#logo {
+  width: 130px;
+}
 /******* js related styling *****/
 
 .times-btn {
@@ -161,8 +180,72 @@ hr {
   color: #0d0a0b;
 }
 
+/* Infographic */
+div.infographic {
+  background-color: #c9e265;
+  display: grid;
+  place-content: center;
+}
+
+/* About us */
+h1#aboutus {
+  font-family: Montserrat;
+  font-size: 4rem;
+  /* text-align: center; */
+  /* padding-left: 40px; */
+}
+.about-container-left {
+  /* display: inline-block; */
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  background-color: orange;
+  display: grid;
+  place-content: center;
+}
+div.about-container-left {
+  display: grid;
+  place-content: center;
+}
+.about-container-right {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  background-color: orange;
+}
+.about-container-right p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+img#aboutimgleft {
+  width: 350px;
+}
+img#aboutimg {
+  width: auto;
+  height: 220px;
+}
+
+/* Footer  */
+
+button#newsletter {
+  border: 0;
+  padding: 10px 9px;
+  font-size: 1rem;
+  font-family: Montserrat;
+  letter-spacing: 0.1em;
+  transition: all.5s ease;
+  background-color: orange;
+}
+.newsletter-form {
+  background-color: #c9e265;
+}
 footer {
-  background: #252525;
+  background: #01acc8;
   color: #f3f3f3;
   padding: 30px;
 }
@@ -193,11 +276,11 @@ footer > p {
 }
 
 .footer-right input {
-  font-size: 18px;
+  font-size: 24px;
   border: none;
   background: transparent;
   outline: none;
-  color: #808080;
+  color: #fff;
   padding-right: 10px;
   width: 100%;
 }
@@ -206,11 +289,59 @@ footer > p {
   display: flex;
   align-items: center;
   justify-content: start;
-  width: 200px;
+  /* width: 200px; */
   padding: 10px 0;
-  border-bottom: 1.6px solid #808080;
+  border-bottom: 1.6px solid #fff;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #1b1b1b;
+  opacity: 1;
+  font-weight: lighter;
+}
+/*ABOUT PAGE STYLE*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
+h1 {
+  margin-bottom: -30px;
+  font-size: 64px;
+}
+
+.desc {
+  margin: 30px 0;
+}
+
+.cta {
+  padding: 15px 40px;
+  border: 1px solid white;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px white, 0 0 20px white;
+  border-radius: 30p;
+}
+
+.slider video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/*Media queries */
 @media (max-width: 460px) {
   .hot-topic-content h2 {
     font-size: 16px;
@@ -258,6 +389,22 @@ footer > p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .about-container-left {
+    float: left;
+    /* position: fixed; */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+  }
+  .about-container-right {
+    float: right;
+    /* position: fixed; */
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -269,7 +416,7 @@ footer > p {
 
   .navigation-container {
     display: flex;
-    background: #252525;
+    background: #01acc8;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -335,7 +482,7 @@ footer > p {
   }
 }
 
-img {
+/* img {
   height: 400px;
   object-fit: contain;
-}
+} */

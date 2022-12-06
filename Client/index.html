@@ -18,13 +18,14 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+
     <!-- header -->
     <header>
       <div class="navigation-container">
         <div class="top-head">
           <div class="web-name">
-            <h1>ENERGYNEWS</h1>
+            <!-- <h1>ENERGYNEWS</h1> -->
+            <img id="logo" src="images/ipologo.webp" width="100" alt="logo" />
           </div>
 
           <div class="ham-btn">
@@ -45,11 +46,10 @@
         <div class="nav-bar" id="nav-bar">
           <nav>
             <ul>
-              <li><a href="#">home</a></li>
-              <li><a href="#">benefits</a></li>
+              <li><a href="index.html">home</a></li>
               <li><a href="#">get involved</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">help</a></li>
+              <li><a href="#aboutus">about</a></li>
+              <li><a href="#infographic">help</a></li>
             </ul>
           </nav>
         </div>
@@ -58,23 +58,28 @@
         <div class="social-icons">
           <ul>
             <li>
-              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.twitter.com/"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </li>
             <li>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-
     <section class="banner">
       <div class="banner-main-content">
-        <h2>GET THE WORLD'S LATEST ENERGY NEWS</h2>
-        <h3>World's Leading News Portal</h3>
+        <h2>GET THE WORLD'S LATEST ENERGY PRICE RELATED NEWS</h2>
+        <h3>World's Leading Energy News Portal</h3>
         <button id="know-more-action">Know More</button>
       </div>
     </section>
@@ -85,10 +90,36 @@
       </div>
     </main>
 
+    <section class="infographic">
+      <div class="infographic" style="
+      background-color: #c9e265;
+  ">     <img id="infographic" src="images/GlobalEnergyCrisis-Energy-tips-infographic.png.webp" alt="infographic" <img="" style="
+    width: 140vh;
+    padding: 30px 20px;
+    /* height: auto; */
+    /* margin: auto; */
+">
+      </div>
+      </section>
+
+    <section class="about-us">
+      <div class="about-container-left"> 
+        <h1 id="aboutus">About Us</h1>
+        <img id="aboutimgleft"src="images/wind-icon.webp" alt="Transparent Renewable Energy Icon">
+      </div>
+      <div class="about-container-right">
+        <img id="aboutimg" src="images/eipologoblack.webp" alt="Transparent Renewable Energy Icon">
+        <p><strong>IEPO</strong> is a News Organization Website designed to inform the world in just one place
+          without the need to research multiple news platforms to know about the latest updates
+          of energy prices worldwide. <strong>IEPO</strong> additionally is compromised with informing the public
+          of the different incentives available for establishing renewable energy in buildings and
+          other organizations that offer help in ending energy poverty around the world.</p>
+      </div>
+    </section>
     <footer>
       <div class="footer-container">
         <div class="footer-left">
-          <h2>ABOUT IEPO</h2>
+          <!-- <h2>ABOUT IEPO</h2>
           <p>
             International Energy Power Organization) IEPO is a News Organization
             Website designed to inform the world in just one place without the
@@ -97,7 +128,7 @@
             with informing the public of the different incentives available for
             establishing renewable energy in buildings and other organizations
             that offer help in ending energy poverty around the world.
-          </p>
+          </p> -->
         </div>
 
         <div class="footer-right">
@@ -111,7 +142,7 @@
             state's Low Income Energy Assistance Program (LIEAP) today.
           </p>
 
-          <div>
+          <div class="newsletter-form">
             <form method="POST" action="localhost:3000/register">
               <input
                 type="text"
@@ -119,9 +150,9 @@
                 class="form"
                 name="email"
               />
-              <button>Join Now</button>
             </form>
-            <i class="fas fa-envelope"></i>
+            <!-- <i class="fas fa-envelope"></i> -->
+            <button id="newsletter">Join Now</button>
           </div>
         </div>
       </div>
