@@ -1,7 +1,9 @@
 :male-technologist:Welcome To Group's 6 HOPE Project App :newspaper:
   =
 **For this project, we were assigned to create an application that will help to raise awareness for oppression, and we were given to implement a  [3rd Party API](https://rapidapi.com/sanglin-TlEqlfGPc/api/energy-price-news/) and an API created by us in our website.**
-:busts_in_silhouette: Group 6 Repo Authors
+:busts_in_silhouette: 
+
+Group 6 Repo Authors
    -
 Axel Camargo, Ashley Perez, Evan Degraffenriedt, and Veronica Diaz.
 Skills Used
