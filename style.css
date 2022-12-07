@@ -244,10 +244,11 @@ button#newsletter {
 .newsletter-form {
   background-color: #c9e265;
 }
+
 footer {
   background: #01acc8;
   color: #f3f3f3;
-  padding: 30px;
+  padding: 20px 60px;
 }
 
 footer h2 {
@@ -288,16 +289,16 @@ footer > p {
 .footer-right div {
   display: flex;
   align-items: center;
-  justify-content: start;
-  /* width: 200px; */
+  justify-content: space-evenly;
+  width: 40%;
   padding: 10px 0;
   border-bottom: 1.6px solid #fff;
 }
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #1b1b1b;
   opacity: 1;
   font-weight: lighter;
+  font-family: Montserrat;
 }
 /*ABOUT PAGE STYLE*/
 .slider {
@@ -463,9 +464,9 @@ h1 {
     padding: 20px;
   }
 
-  .footer-container {
+  /* .footer-container {
     display: flex;
-  }
+  } */
 
   .footer-right,
   .footer-left {
